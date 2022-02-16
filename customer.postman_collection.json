@@ -1,0 +1,120 @@
+{
+	"info": {
+		"_postman_id": "05b44532-7726-4130-9e55-7c39bea3488a",
+		"name": "customer",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "read",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8889/customer",
+					"host": [
+						"localhost"
+					],
+					"port": "8889",
+					"path": [
+						"customer"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": \"CUS-012\",\r\n    \"name\": \"David\",\r\n    \"lastname\": \"Vivas\",\r\n    \"dni\": 12345678,\r\n    \"typeCustomer\": \"Personal\",\r\n    \"profile\":\"\"\r\n}\r\n\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8889/customer",
+					"host": [
+						"localhost"
+					],
+					"port": "8889",
+					"path": [
+						"customer"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "details",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8889/customer/CUS-001",
+					"host": [
+						"localhost"
+					],
+					"port": "8889",
+					"path": [
+						"customer",
+						"CUS-001"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\r\n    \"id\": \"CUS-001\",\r\n    \"name\": \"Danae\",\r\n    \"lastname\": \"Linares\",\r\n    \"dni\": 12345678,\r\n    \"typeCustomer\": \"Empresa\",\r\n    \"profile\":\"PYME\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8889/customer/CUS-001",
+					"host": [
+						"localhost"
+					],
+					"port": "8889",
+					"path": [
+						"customer",
+						"CUS-001"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8889/customer/CUS-001",
+					"host": [
+						"localhost"
+					],
+					"port": "8889",
+					"path": [
+						"customer",
+						"CUS-001"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
